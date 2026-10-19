@@ -1,5 +1,7 @@
 #!name = 9monsters Privacy Album
 #!desc = 自动采集图片并生成 Loon 本地相册；访问 http://album.loon.invalid/
+#!icon = https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/icon.png?v=1
+#!homepage = https://github.com/fafatop/9monsters-privacy
 #!loon_version = 3.5.1(983)
 #!date = 2026-10-19
 
