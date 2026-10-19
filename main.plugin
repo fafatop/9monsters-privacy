@@ -1,4 +1,4 @@
-#!name = 9monsters Privacy Album
+#!name = 9monsters Privacy Album v1.0
 #!desc = 自动采集已解锁隐私相册并保存至 Loon 本地相册；访问 http://album.loon.invalid
 #!icon = https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/icon.png?v=1
 #!homepage = https://github.com/fafatop/9monsters-privacy
