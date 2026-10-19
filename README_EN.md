@@ -23,9 +23,11 @@
 
 ## Requirements
 
+- iOS only.
 - Loon `3.5.1 (983)` or later.
 - Script, Rewrite, and MitM enabled in Loon.
 - A Loon MitM certificate installed and trusted on the device.
+- Notifications for Loon enabled in iOS Settings.
 
 ## Installation
 
