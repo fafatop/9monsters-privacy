@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="./icon.png" width="128" alt="9monsters Privacy Album icon">
+  <img src="./icon.png" width="128" alt="9monsters Privacy icon">
 </p>
 
-<h1 align="center">9monsters Privacy Album</h1>
+<h1 align="center">9monsters Privacy</h1>
 
 <p align="center">Automatically collects private albums already accessible to the current account and generates a local album page in Loon.</p>
 

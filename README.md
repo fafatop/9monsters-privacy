@@ -3,10 +3,10 @@
 </p>
 
 <p align="center">
-  <img src="./icon.png" width="128" alt="9monsters Privacy Album 图标">
+  <img src="./icon.png" width="128" alt="9monsters Privacy 图标">
 </p>
 
-<h1 align="center">9monsters Privacy Album</h1>
+<h1 align="center">9monsters Privacy</h1>
 
 <p align="center">自动采集当前账号已可访问的隐私相册，并在 Loon 中生成本地相册页面。</p>
 
