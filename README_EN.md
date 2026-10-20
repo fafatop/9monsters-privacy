@@ -73,23 +73,17 @@ The plugin does not store the original image files in `$persistentStore`, and it
 | File | Purpose |
 | --- | --- |
 | `main.plugin` | Loon plugin entry point and rule configuration |
-| `collect.fixed.js` | Collects group names, image IDs, and timestamps |
-| `gallery.fixed.js` | Generates the local album page in Loon |
+| `collect.js` | Collects group names, image IDs, and timestamps |
+| `gallery.js` | Generates the local album page in Loon |
 | `icon.png` | Plugin icon |
 
 ## Versioning
 
-Current version: `v1.0`
+Current version: `v1.1`
 
-Future releases will use sequential version numbers such as `v1.1`, `v1.2`, and `v1.3`. The version number in the plugin name identifies the public release. Query parameters appended to script URLs are cache identifiers and are managed separately.
+Future releases will use sequential version numbers such as `v1.2`, `v1.3`, and `v1.4`. The version number in the plugin name identifies the public release. Query parameters appended to script and icon URLs use the current release number to refresh cached resources.
 
-## Source
-
-This project is independently organized and maintained based on the following Loon plugin:
-
-```text
-https://loon.h.o1.hk/9m_prive_get/main.plugin
-```
+## Disclaimer
 
 This repository is not an official 9monsters project and is not affiliated or partnered with 9monsters. Users are responsible for complying with the applicable terms of service and must only process content they are authorized to access.
 

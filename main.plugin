@@ -1,19 +1,20 @@
-#!name = 9monsters v1.0
+#!name = 9monsters v1.1
 #!desc = 自动采集已解锁隐私相册并保存至 Loon 本地相册；访问 http://album.loon.invalid
-#!icon = https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/icon.png?v=1
+#!icon = https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/icon.png?v=1.1
 #!homepage = https://github.com/fafatop/9monsters-privacy
 #!loon_version = 3.5.1(983)
-#!date = 2026-10-19
+#!date = 2026-10-20
 
 [Argument]
 notify = switch,true,tag=新增图片通知
 
 [Script]
-response if ${url} ~= /^https:\/\/api\.ninemonsters\.com\/other\/get\?(?:[^#]*&)?public_key(?:=[^&#]*)?(?:&|#|$)/ then script("https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/collect.fixed.js?v=2", {${notify}}) with requires_body=true, timeout=10, tag="采集图片列表"
-request if ${url} ~= /^http:\/\/album\.loon\.invalid\/(?:\?[^#]*)?$/ then script("https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/gallery.fixed.js?v=2") with timeout=10, tag="图片相册"
+response if ${url} ~= /^https:\/\/api\.ninemonsters\.com\/other\/get\?(?:[^#]*&)?public_key(?:=[^&#]*)?(?:&|#|$)/ then script("https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/collect.js?v=1.1", {${notify}}) with requires_body=true, timeout=10, tag="采集图片列表"
+request if ${url} ~= /^http:\/\/album\.loon\.invalid\/(?:\?[^#]*)?$/ then script("https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/gallery.js?v=1.1") with timeout=10, tag="图片相册"
 
 [Host]
 album.loon.invalid = 192.0.2.9
 
 [Mitm]
 hostname = api.ninemonsters.com
+

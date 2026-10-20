@@ -73,23 +73,17 @@ https://raw.githubusercontent.com/fafatop/9monsters-privacy/main/main.plugin
 | 文件 | 用途 |
 | --- | --- |
 | `main.plugin` | Loon 插件入口与规则配置 |
-| `collect.fixed.js` | 采集分组、图片 ID 和时间信息 |
-| `gallery.fixed.js` | 生成 Loon 本地相册页面 |
+| `collect.js` | 采集分组、图片 ID 和时间信息 |
+| `gallery.js` | 生成 Loon 本地相册页面 |
 | `icon.png` | 插件图标 |
 
 ## 版本规则
 
-当前版本：`v1.0`
+当前版本：`v1.1`
 
-后续正式更新依次使用 `v1.1`、`v1.2`、`v1.3` 等版本号。插件名称中的版本号表示公开发布版本；脚本 URL 后的查询参数仅用于刷新缓存，两者分别管理。
+后续正式更新依次使用 `v1.2`、`v1.3`、`v1.4` 等版本号。插件名称中的版本号表示公开发布版本；脚本和图标 URL 后的查询参数使用当前发布版本号，用于刷新缓存。
 
-## 来源说明
-
-本项目基于以下 Loon 插件进行独立整理与维护：
-
-```text
-https://loon.h.o1.hk/9m_prive_get/main.plugin
-```
+## 免责声明
 
 本仓库并非 9monsters 官方项目，与 9monsters 官方无隶属或合作关系。使用者应自行遵守相关服务条款，并仅处理本人有权访问的内容。
 

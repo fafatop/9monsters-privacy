@@ -1,7 +1,6 @@
 /* Loon Response Script: collect group names, image IDs and timestamps. */
 (function () {
   const STORE_KEY = "ninemonsters.album.v2";
-  const LEGACY_KEY = "ninemonsters.album.v1";
 
   function messageOf(error) {
     if (error && error.message) return error.message;
@@ -68,22 +67,6 @@
         db.version = 2;
       } catch (error) {
         throw new Error("v2 本地数据损坏：" + messageOf(error));
-      }
-    } else {
-      // Migrate a valid v1 database without modifying or deleting the old key.
-      const legacyRaw = $persistentStore.read(LEGACY_KEY);
-      if (legacyRaw) {
-        try {
-          const legacy = JSON.parse(legacyRaw);
-          if (isDatabase(legacy)) {
-            db = legacy;
-            db.version = 2;
-          } else {
-            console.log("已忽略不兼容的 v1 本地数据，并保留原记录。");
-          }
-        } catch (_) {
-          console.log("已忽略损坏的 v1 本地数据，并保留原记录。");
-        }
       }
     }
 
